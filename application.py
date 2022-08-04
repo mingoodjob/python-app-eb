@@ -19,7 +19,7 @@ def file_upload():
                       )
     s3.put_object(
         ACL="public-read",
-        Bucket=os.environ["BUCKET_NAME"],
+        Bucket="pracs3",
         Body=file,
         Key=file.filename,
         ContentType=file.content_type
