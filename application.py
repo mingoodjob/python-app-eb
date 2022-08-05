@@ -10,7 +10,7 @@ cors = CORS(application, resources={r"/*": {"origins": "*"}})
 def main():
     return "petrasche"
 
-@application.route('/fileupload', methods=['POST'])
+@application.route('/fileuploa', methods=['POST'])
 def file_upload():
     file = request.files['file']
     s3 = boto3.client('s3',
